@@ -1,0 +1,43 @@
+/* Initial transparent navbar */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    background-color: #212529;
+}
+
+/* Solid background when scrolled */
+.navbar.scrolled {
+    background-color: #141414;
+    /* Netflix's dark background color */
+}
+
+/* Ensure the navbar is fixed at the top */
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Style the logo */
+.navbar-brand img {
+    height: auto;
+    width: 100px;
+}
+
+/* Style the search bar */
+.form-control.bg-transparent {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+/* Style the profile dropdown */
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle img {
+    width: 30px;
+    height: 30px;
+}

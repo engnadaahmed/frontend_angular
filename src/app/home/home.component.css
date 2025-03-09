@@ -1,0 +1,70 @@
+/* Sidebar styling */
+.sidebar {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #333;
+    /* Dark text color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Change mouse to hand pointer on hover */
+}
+
+
+
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    /* Light gray background on hover */
+}
+
+/* Main content margin */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Table styling */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Pagination styling */
+.pagination {
+    margin: 0;
+}
+
+.table-container {
+    width: 100%;
+    min-width: 1000px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent wrapping of table cells */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: normal;
+    /* Allow text to wrap */
+    word-wrap: break-word;
+    /* Break long words if necessary */
+    overflow-wrap: break-word;
+    /* Ensure long words wrap */
+}
+
+th {
+    background-color: #f2f2f2;
+}

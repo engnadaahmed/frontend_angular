@@ -1,0 +1,23 @@
+/* Sidebar */
+.sidebar {
+    position: fixed;
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Light background color */
+    /* Sidebar styling */
+
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 25%;
+    /* Same as sidebar width */
+    padding: 20px;
+}
+
+/* Movie Details */
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

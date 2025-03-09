@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Fixed Sidebar 
+        <div class="col-md-3 bg-light sidebar">
+            <h2>Dashboard</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/movies">View All Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/movies/batch">Batch Movies</a>
+                </li>
+            </ul>
+        </div>
+    -->
+        <!-- Sidebar-->
+        <div class="sidebar bg-light" style="width: 250px; height: 100vh; position: fixed; top: 0; left: 0;">
+            <h2 class="p-3">Dashboard</h2>
+            <ul class="nav flex-column p-3">
+                <li class="nav-item">
+                    <a class="nav-link active">Add Single Movie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">View All Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Batch Movies</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 main-content">
+            <div *ngIf="movie" class="movie-details">
+                <h2>{{ movie.title }}</h2>
+                <img [src]="movie.poster" alt="Poster" class="img-fluid" />
+                <p><strong>Year:</strong> {{ movie.year }}</p>
+                <p><strong>Director:</strong> {{ movie.director }}</p>
+                <p><strong>Writer:</strong> {{ movie.writer }}</p>
+                <p><strong>Actors:</strong> {{ movie.actors }}</p>
+                <p><strong>Plot:</strong> {{ movie.plot }}</p>
+                <p><strong>IMDb Rating:</strong> {{ movie.imdbRating }}</p>
+                <p><strong>Genre:</strong> {{ movie.genre }}</p>
+                <p><strong>Runtime:</strong> {{ movie.runtime }}</p>
+                <p><strong>Language:</strong> {{ movie.language }}</p>
+                <p><strong>Country:</strong> {{ movie.country }}</p>
+                <p><strong>Awards:</strong> {{ movie.awards }}</p>
+            </div>
+        </div>
+    </div>
+</div>
