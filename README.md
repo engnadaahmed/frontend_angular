@@ -12,18 +12,27 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Before you begin, ensure you have the following installed:
 
+Node.js (version 16 or higher)
+
+Angular CLI (version 15 or higher)
+
+A package manager like npm or yarn
+
+To check the installed versions, run:
 ```bash
-ng generate component component-name
+node -v
+npm -v
+ng version
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Installation
+Install dependencies:
 
 ```bash
-ng generate --help
+npm install
 ```
 
 ## Building
